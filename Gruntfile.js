@@ -390,6 +390,9 @@ module.exports = function (grunt) {
                 stdout: false,
             },
             fixCryptoApiImports: {
+                options: {
+                    shell: "/bin/bash"
+                },
                 command: [
                     `[[ "$OSTYPE" == "darwin"* ]]`,
                     "&&",
